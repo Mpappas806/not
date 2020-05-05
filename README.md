@@ -13,7 +13,7 @@
             document.getElementById("result").innerHTML = count;
         } else {
             document.getElementById("result").innerHTML = count;
-        }
+        } 
     } 
 
     function resetCounter() {
