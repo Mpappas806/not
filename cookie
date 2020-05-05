@@ -1,0 +1,25 @@
+<html>
+<body>
+    <a href="#" onclick="clickCounter()">Click Counter</a>
+    <a href="#" onclick="resetCounter()">Reset Counter</a>
+    <br>
+    <p id="result"></p>
+
+    <script>
+    function clickCounter() {
+        var count = localStorage.clickcount = Number(localStorage.clickcount)+1;
+        if (isNaN(count) === true) {
+            count = localStorage.clickcount = 1;
+            document.getElementById("result").innerHTML = count;
+        } else {
+            document.getElementById("result").innerHTML = count;
+        }
+    } 
+
+    function resetCounter() {
+        var reset = localStorage.clickcount = 0;
+        document.getElementById("result").innerHTML = reset;
+    }
+   </script>
+</body>
+</html>
